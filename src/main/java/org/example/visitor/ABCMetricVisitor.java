@@ -10,11 +10,11 @@ import java.util.Set;
 public class ABCMetricVisitor extends ClassVisitor {
 
     // Assignments
-    private int totalA = 0;
+    private long totalA = 0;
     // Branches
-    private int totalB = 0;
+    private long totalB = 0;
     // Conditions
-    private int totalC = 0;
+    private long totalC = 0;
 
     public ABCMetricVisitor(ClassVisitor visitor) {
         super(Opcodes.ASM8, visitor);
